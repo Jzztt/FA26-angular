@@ -1,0 +1,18 @@
+<p>student-create works!</p>
+<form [formGroup]="studentForm" (ngSubmit)="onSubmit()" action="">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" id="name" formControlName="name" />
+  </div>
+
+  <div>
+    <label for="email">Email</label>
+    <input type="email" id="email" formControlName="email" />
+  </div>
+  <div>
+    <label for="mssv">MSSV</label>
+    <input type="text" id="mssv" formControlName="mssv" />
+  </div>
+  <button type="submit">Add Student</button>
+</form>
+

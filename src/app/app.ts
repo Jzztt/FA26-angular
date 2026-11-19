@@ -1,12 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { Lifecycle } from './lifecycle/lifecycle';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [FormsModule,RouterOutlet,Lifecycle, CommonModule],
+  imports: [FormsModule,RouterOutlet,Lifecycle, CommonModule, RouterLink],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
